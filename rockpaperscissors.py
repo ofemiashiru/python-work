@@ -11,35 +11,28 @@ def checkWinner(you, cpu):
     #You chose Rock
     if you == choices[0] and cpu == choices[0]:
         result = "Draw"
-        return result
     elif you == choices[0] and cpu == choices[1]:
         result = "Computer Wins"
-        return result 
     elif you == choices[0] and cpu == choices[2]:
         result = "You Win"
-        return result
 
     #You chose Paper
     elif you == choices[1] and cpu == choices[0]:
         result = "You Win"
-        return result
     elif you == choices[1] and cpu == choices[1]:
         result = "Draw"
-        return result
     elif you == choices[1] and cpu == choices[2]:
         result = "Computer Wins"
-        return result 
 
     #You chose Scissors
     elif you == choices[2] and cpu == choices[0]:
         result = "Computer Wins"
-        return result 
     elif you == choices[2] and cpu == choices[1]:
         result = "You Win"
-        return result
     elif you == choices[2] and cpu == choices[2]:
         result = "Draw"
-        return result
+    
+    return result
 
 
 count = 1
